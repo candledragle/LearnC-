@@ -11,11 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arr.h" />
     <ClInclude Include="hello1.h" />
+    <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="arr.cpp" />
     <ClCompile Include="hello1.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Queue.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2F84B655-BCD6-4ACF-B138-DB4629FA1E66}</ProjectGuid>
