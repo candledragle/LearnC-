@@ -13,11 +13,37 @@ pointer head,tail;
 void push23(dataType data);
 dataType pop23();
 int c_in_str(const char *str,char ch);
+char* buildStr(char ch,int length);
+
 
 int main()
 {
 
+	/*
+		字符串和字符数组的区别是字符串包含一个结束字符'\0',字符数组没有
+	*/
+	int n = 4;
 
+	while (n-->0 )
+	{
+		printf("%d",n);
+	}
+	printf("\n");
+
+	/*
+		创建字符串
+	*/
+	char* str1 = buildStr('a',4);
+	cout << str1 << endl;
+
+	/*
+	  验证字符串的结束符是否起作用
+	*/
+	while (*str1)
+	{
+		cout << *str1 << endl;
+		str1++;
+	}
 
 	/*
 		char 数组
@@ -64,6 +90,20 @@ int main()
 	cout << "hello world!" << endl;
 */
 	return 0;
+}
+
+char* buildStr(char ch,int n)
+{
+	//创建字符数组
+	char* pStr =new char[n+1];
+	//添加结束字符
+	pStr[n] = '\0';
+	while (n-->0)
+	{
+		pStr[n] = ch;
+	}
+
+	return pStr;
 }
 
 int c_in_str(const char *str,char ch)
