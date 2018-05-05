@@ -1,6 +1,3 @@
-//#include "Queue.h"
-//#include "arr.h"
-//#include "hello1.h"
 #include <iostream>
 using namespace std;
 typedef int dataType;
@@ -18,6 +15,16 @@ dataType pop23();
 
 int main()
 {
+
+	char ghost[15] = "12345678912345";
+	char *str = "dadadad";
+	int n1 = strlen(ghost);
+	int n2 = strlen(str);
+	int n3 = strlen("2323s");
+
+	printf("%d\n",n1);
+	printf("%d\n",n2);
+	printf("%d\n",n3);
 	//using namespace std;
 	//sayHello();
 	//cout << "hello" << endl;
@@ -26,7 +33,7 @@ int main()
 	//int arr[8] = {1,2,3,4,5,6,7,8};
 
 	//sum_arr(arr + 2, arr + 5);
-	if (NULL == head)
+	/*if (NULL == head)
 	{
 		head = tail;
 		cout << "hahha" << endl;
@@ -42,7 +49,7 @@ int main()
 		current = pop23();
 	}
 	cout << "hello world!" << endl;
-
+*/
 	return 0;
 }
 
