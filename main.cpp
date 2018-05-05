@@ -12,9 +12,12 @@ pointer head,tail;
 
 void push23(dataType data);
 dataType pop23();
+int c_in_str(const char *str,char ch);
 
 int main()
 {
+
+
 
 	/*
 		char 数组
@@ -31,6 +34,10 @@ int main()
 	printf("%d\n",n1);
 	printf("%d\n",n2);
 	printf("%d\n",n3);
+
+	//查找字符串ghost中字符'1'出现的次数
+	int count =c_in_str(ghost,'1');
+	printf("字符1出现的次数是：%d\n",count);
 	//using namespace std;
 	//sayHello();
 	//cout << "hello" << endl;
@@ -57,6 +64,21 @@ int main()
 	cout << "hello world!" << endl;
 */
 	return 0;
+}
+
+int c_in_str(const char *str,char ch)
+{
+
+	int sum =0;
+	while (*str)
+	{
+		if (*str == ch)
+		{ 
+			sum++;
+		}
+		str++;
+	}
+	return sum;
 }
 
 void push23(dataType data)
