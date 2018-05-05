@@ -16,6 +16,12 @@ dataType pop23();
 int main()
 {
 
+	/*
+		char 数组
+		用括号括起来的字符串常量（也称为字符串字面值）
+		被设置为字符串的地址的char指针
+	*/
+
 	char ghost[15] = "12345678912345";
 	char *str = "dadadad";
 	int n1 = strlen(ghost);
