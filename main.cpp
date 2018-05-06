@@ -1,6 +1,8 @@
 #include <iostream>
+#include <string>
 using namespace std;
 typedef int dataType;
+const int SIZE = 5;
 
 typedef struct Node{
 
@@ -14,7 +16,7 @@ void push23(dataType data);
 dataType pop23();
 int c_in_str(const char *str,char ch);
 char* buildStr(char ch,int length);
-
+void display(const string sa[], int n);
 
 int main()
 {
@@ -64,6 +66,17 @@ int main()
 	//查找字符串ghost中字符'1'出现的次数
 	int count =c_in_str(ghost,'1');
 	printf("字符1出现的次数是：%d\n",count);
+
+	
+	string list[SIZE];
+	for (int i = 0; i < SIZE; i++)
+	{
+		cout << i + 1 << ":";
+		getline(cin,list[i]);
+	}
+
+	cout << "your list:\n";
+	display(list,SIZE);
 	//using namespace std;
 	//sayHello();
 	//cout << "hello" << endl;
@@ -89,7 +102,18 @@ int main()
 	}
 	cout << "hello world!" << endl;
 */
+
+	//释放内存
+	delete[] str1;
 	return 0;
+}
+
+void display(const string sa[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << i + 1 << ":" << sa[i] << endl;
+	}
 }
 
 char* buildStr(char ch,int n)
