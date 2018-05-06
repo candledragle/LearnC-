@@ -24,9 +24,6 @@
     <ClInclude Include="Queue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="topfive.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="hello1.cpp">
